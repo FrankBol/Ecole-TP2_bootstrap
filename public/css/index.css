@@ -1,30 +1,22 @@
 @charset "UTF-8";
-body {
-  font-family: "Ribeye", cursive !important;
-}
-
-.nav-secondaire {
-  background: linear-gradient(to right, rgba(74, 41, 50, 0.9), rgba(163, 76, 80, 0.9));
-}
-.nav-secondaire a {
-  font-weight: bold !important;
-}
-.nav-secondaire input {
-  border: 0.1em solid rgba(206, 194, 174, 0.9);
-  background-color: rgba(206, 194, 174, 0.9);
-  border-radius: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-.nav-secondaire input:focus {
-  outline: none;
-}
-.nav-secondaire input:hover {
-  background-color: rgba(206, 194, 174, 0.7);
-}
-
-img {
+.img-accueil {
   height: 70vh;
   object-fit: contain;
+}
+
+.img-carte {
+  height: 50vh;
+  object-fit: contain;
+}
+
+.image-fond-default {
+  background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/wowTest.jpg");
+  background-size: cover;
+}
+
+.image-fond-cree {
+  background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/pathfinderGens.jpg");
+  background-size: cover;
 }
 
 .fade-in1 {
@@ -63,14 +55,39 @@ img {
     opacity: 1;
   }
 }
-.image-fond-default {
-  background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/wowTest.jpg");
-  background-size: cover;
+body, html {
+  font-family: "Ribeye", cursive !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.image-fond-cree {
-  background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/pathfinderGens.jpg");
-  background-size: cover;
+.hover-light, footer a:hover, .nav-secondaire a:hover, .nav-prin li a:hover {
+  color: #cec2ae !important;
+}
+
+.nav-secondaire {
+  background: linear-gradient(to right, rgba(74, 41, 50, 0.9), rgba(163, 76, 80, 0.9));
+}
+.nav-secondaire a {
+  font-weight: bold !important;
+}
+.nav-secondaire input {
+  border: 0.1em solid rgba(206, 194, 174, 0.9);
+  background-color: rgba(206, 194, 174, 0.9);
+  border-radius: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.nav-secondaire input:focus {
+  outline: none;
+}
+.nav-secondaire input:hover {
+  background-color: rgba(206, 194, 174, 0.7);
+}
+
+body, html {
+  font-family: "Ribeye", cursive !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /*!

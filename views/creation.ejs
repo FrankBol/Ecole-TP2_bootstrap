@@ -1,19 +1,19 @@
 <%- include ("partials/header")%>
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb ">
+  <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="text-decoration-none" id="lien-nav-principal" href="/">Acceuil</a></li>
     <li class="breadcrumb-item active" aria-current="page">Création</li>
   </ol>
 </nav>
 <main class="container-fluid">
-  <div class="row ">
-    <nav class="bg-info col-sm-2 bg-info" aria-label="barre navigation principal">
+  <div class="row">
+    <nav class="bg-info col-sm-2 bg-info nav-prin" aria-label="barre navigation principal">
       <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link text-white" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active " aria-current="creation" href="creation">Creation</a>
+          <a class="nav-link text-white active" aria-current="creation" href="creation">Creation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="default">Default</a>
@@ -23,10 +23,10 @@
       </li>
       </ul>
     </nav>
-    <form action="https://philippefleury.com/backend.php" method="post" class="col-sm ">
+    <form action="https://philippefleury.com/backend.php" method="post" class="col-sm">
       <div class="row">
         <section class="col-md-6 bg-light p-3">
-          <fieldset class="form-group p-3 ">
+          <fieldset class="form-group p-3">
             <div class="row">
               <figure class="figure col-5">
                 <img src="/img/3.png" alt="Personage Nain" class="figure-img img-fluid rounded">
@@ -34,65 +34,65 @@
               </figure>
               <div class="col">
                 <div class="p-5">
-                  <h4 class="text-success mb-3">Choisir une race </h4>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgElfe" value="imgElfe">
-                    <label class="form-check-label  mb-2" for="imgElfe">Elfe
+                  <p class="text-success mb-3 h4">Choisir une race </p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Elfe" value="Elfe">
+                    <label class="form-check-label  mb-2" for="Elfe">Elfe</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHalfelin" value="imgHalfelin">
-                    <label class="form-check-label mb-2" for="imgHalfelin">Halfelin
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Halfelin" value="Halfelin">
+                    <label class="form-check-label mb-2" for="Halfelin">Halfelin</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHumain" value="imgHumain">
-                    <label class="form-check-label mb-2" for="imgHumain">Humain
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Humain" value="Humain">
+                    <label class="form-check-label mb-2" for="Humain">Humain</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgNain" value="imgNain">
-                    <label class="form-check-label mb-2" for="imgNain">Nain
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Nain" value="Nain">
+                    <label class="form-check-label mb-2" for="Nain">Nain</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgSangdragon" value="imgSangdragon">
-                    <label class="form-check-label mb-2" for="imgSangdragon">Sangdragon 
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Sangdragon" value="Sangdragon">
+                    <label class="form-check-label mb-2" for="Sangdragon">Sangdragon</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgGnome" value="imgGnome">
-                    <label class="form-check-label mb-2" for="imgGnome">Gnome
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Gnome" value="Gnome">
+                    <label class="form-check-label mb-2" for="Gnome">Gnome</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiElfe" value="imgDemiElfe">
-                    <label class="form-check-label mb-2" for="imgDemiElfe">Demi-Elfe
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="DemiElfe" value="DemiElfe">
+                    <label class="form-check-label mb-2" for="DemiElfe">Demi-Elfe</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiOrc" value="imgDemiOrc">
-                    <label class="form-check-label mb-2" for="imgDemiOrc">Demi-Orc
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="DemiOrc" value="DemiOrc">
+                    <label class="form-check-label mb-2" for="DemiOrc">Demi-Orc</label>
                   </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgTieffelin" value="imgTieffelin">
-                    <label class="form-check-label mb-2" for="imgTieffelin">Tieffelin
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="choixPersonnage" id="Tieffelin" value="Tieffelin">
+                    <label class="form-check-label mb-2" for="Tieffelin">Tieffelin</label>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form-floating col">
-              <textarea class="form-control w-75 mt-6" placeholder="Slogan" name="slogan" id="slogan"></textarea>
-              <label for="floatingTextarea">Slogan</label>
-              <small id="passwordHelpBlock" class="form-text text-muted">
+            <div class="col mt-6">
+              <label for="slogan">Slogan</label>
+              <textarea class="form-control w-75" id="slogan"></textarea>
+              <small class="form-text text-muted">
                 Phrase de victoire de votre personnage
               </small>
             </div>
           </fieldset>
         </section>
         <section class="col-md-6 p-3 bg-light">
-          <fieldset class=" p-3">
+          <fieldset class="p-3">
             <div class="p-3 col-8">
               <div class="mb-3">
                 <label for="couleur" class="form-label  text-success">Couleur de la badge</label>
                 <input type="color" class="form-control form-control-color" name="couleur" id="couleur" value="couleur" title="Choose your color">
               </div>
               <label for="lieuxNaissance" class="form-label  text-success">Lieux de Naissance</label>
-              <input class="form-control" list="datalistOptions" nom="lieuxNaissance" id="lieuxNaissance">
-              <datalist id="datalistOptions" name="datalistOptions">
+              <input class="form-control" list="datalistOptions" name="lieuxNaissance" id="lieuxNaissance">
+              <datalist id="datalistOptions">
                 <option value="La compté">
                 <option value="Pays du bouck">
                 <option value="Vallé Ensorcellé">
@@ -101,25 +101,21 @@
               </datalist>
             </div>
             <div class="p-3 col-8">
-              <h4 class=" text-success">Choisir les niveaux</h4>
+              <p class="text-success h4">Choisir les niveaux</p>
               <div>
-                <label for="vitesseRange" class="form-label w-25">Vitesse</label>
-                <span id="vitesseValue">50</span>
+                <label for="vitesseRange" class="form-label w-25">Vitesse <span id="vitesseValue"></span></label>
                 <input type="range" class="form-range" name="vitesseRange" id="vitesseRange">
               </div>
               <div>
-                <label for="magieRange" class="form-label w-25">Magie</label>
-                <span id="magieValue"></span>
+                <label for="magieRange" class="form-label w-25">Magie <span id="magieValue"></span></label>
                 <input type="range" class="form-range" name="magieRange" id="magieRange">
               </div>
               <div>
-                <label for="forceRange" class="form-label w-25">Force</label>
-                <span id="forceValue">50</span>
+                <label for="forceRange" class="form-label w-25">Force <span id="forceValue"></span></label>
                 <input type="range" class="form-range" name="forceRange" id="forceRange">
               </div>
               <div>
-                <label for="PouvoirRange" class="form-label w-25">Pouvoir</label>
-                <span id="pouvoirValue">50</span>
+                <label for="pouvoirRange" class="form-label w-25">Pouvoir <span id="pouvoirValue"></span></label>
                 <input type="range" class="form-range" name="PouvoirRange" id="pouvoirRange">
               </div>
             </div>
@@ -127,7 +123,7 @@
               <label for="file" class="form-label  text-success">Importer vos Cartes</label>
               <input class="form-control" type="file" name="file" id="file">
             </div>
-            <div class="btn-group" role="group" aria-label="Boutton soummetre formilaire">
+            <div class="btn-group p-3" role="group" aria-label="Boutton soummetre formulaire">
               <button type="submit" class="btn btn-primary">SOUMETTRE</button>
               <button type="button" class="btn btn-secondary">RÉNITIALISATION</button>
               <button type="button" class="btn btn-primary bg-white text-dark"><svg xmlns="http://www.w3.org/2000/svg"

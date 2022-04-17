@@ -1,7 +1,10 @@
-
-body{
+// ----------------------------------------------All Page---------------------------------------
+body, html{
     font-family:'Ribeye', cursive !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
 // Primary
 $dark-red: #4a2932;
 $medium-red: #a34c50;
@@ -31,74 +34,7 @@ $spacers: (
     7: ($spacer * 15),
 );
 
+
+// --------------------------------------------------Page Création---------------------------------------------------
 $form-range-track-bg: $success;
 
-.nav-secondaire {
-    background: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
-
-    a{
-        font-weight: bold!important;
-    }
-
-    input{     
-        border: 0.1em solid rgba($light, 0.9);
-        background-color: rgba($light, 0.9);
-        border-radius: 20px;
-        font-family: 'Times New Roman', Times, serif;
-
-        &:focus {
-             outline: none;
-       }
-
-        &:hover {
-            background-color: rgba($light, 0.7)
-        }
-}
-}
-img{
-    height:70vh;
-    object-fit: contain;
-}
-
-.fade-in1 {
-    animation: fadeIn 4s linear 0.5s both;
-  }
-  .fade-in2 {
-    opacity: 0;
-    animation: fadeIn 4s linear 1.5s both;
-  }
-  .fade-in3 {
-    opacity: 0;
-    animation: fadeIn 4s linear 2.5s both;
-  }
-  .fade-in4 {
-    opacity: 0;
-    animation: fadeIn 4s linear 3.5s both;
-  }
-  
-  @keyframes fadeIn {
-      0% { 
-          opacity: 0;
-      }
-      25% { 
-          opacity: 0.10;
-      }
-      35% { 
-        opacity: 0.20;
-    }
-      50% { 
-        opacity:0.5;
-      }
-      100% {
-         opacity: 1;
-      }
-}
-
-.image-fond-default{
-    background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/wowTest.jpg");
-    background-size: cover;
-}
-.image-fond-cree{
-    background-image: url("https://fr.fantasynamegenerators.com/images/backgrounds/pathfinderGens.jpg");
-    background-size: cover;
-}

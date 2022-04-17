@@ -1,0 +1,45 @@
+@import "custom"; 
+
+.hover-light{
+    color: $light !important;
+}
+
+.nav-prin { 
+    li {
+        a {
+            &:hover {
+                @extend .hover-light;
+            }
+
+        }
+    }
+
+}
+
+.nav-secondaire {
+    background: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
+
+    a{
+        font-weight: bold!important;
+
+        &:hover {
+            @extend .hover-light;
+        }
+    }
+
+    input{     
+        border: 0.1em solid rgba($light, 0.9);
+        background-color: rgba($light, 0.9);
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+
+        &:focus {
+             outline: none;
+       }
+
+        &:hover {
+            background-color: rgba($light, 0.7)
+        }
+}
+}
+    

@@ -1,2 +1,15 @@
+@import "img";
+@import "animation"; 
+@import "nav"; 
 @import "custom"; 
 @import "../node_modules/bootstrap/scss/bootstrap"; 
+
+
+// ----------------------------------Footer------------------------------------
+footer{
+    a{
+        &:hover {
+            @extend .hover-light;
+        }
+    }
+}
