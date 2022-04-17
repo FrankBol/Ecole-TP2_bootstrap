@@ -1,3 +1,5 @@
+if (window.location.pathname === "/creation") {
+
 let vitesseRange = document.getElementById("vitesseRange");
 let magieRange = document.getElementById("magieRange");
 let forceRange = document.getElementById("forceRange");
@@ -17,3 +19,5 @@ vitesseRange.addEventListener("mousemove", () => vitesseValue.textContent = vite
 magieRange.addEventListener("mousemove", () => magieValue.textContent = magieRange.value);
 forceRange.addEventListener("mousemove", () => forceValue.textContent = forceRange.value);
 pouvoirRange.addEventListener("mousemove", () => pouvoirValue.textContent = pouvoirRange.value);
+}
+

@@ -7,16 +7,16 @@ app.use(express.static("public"));
 app.set ("view engine", "ejs");
 
 app.get ("/", (req, res)=>{
-    res.render("index");
+    res.render("index", {title : "Accueil"});
 });
 app.get ("/creation", (req, res)=>{
-    res.render("creation");
+    res.render("creation", {title : "Création"});
 });
 app.get ("/default", (req, res)=>{
-    res.render("default");
+    res.render("default", {title : "Défaut"});
 });
 app.get ("/personnageCree", (req, res)=>{
-    res.render("personnageCree");
+    res.render("personnageCree", {title : "Personnage Créé"});
 });
 
 const port = 4000
