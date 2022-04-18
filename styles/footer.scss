@@ -1,0 +1,11 @@
+@import "custom"; 
+
+footer.text-lg-start {
+    background: $degrader;
+    a{
+        &:hover {
+            @extend .hover-light;
+        }
+    }
+}
+

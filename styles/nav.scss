@@ -1,8 +1,5 @@
 @import "custom"; 
 
-.hover-light{
-    color: $light !important;
-}
 
 .nav-prin { 
     li {
@@ -17,7 +14,7 @@
 }
 
 .nav-secondaire {
-    background: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
+    background: $degrader;
 
     a{
         font-weight: bold!important;
@@ -42,4 +39,6 @@
         }
 }
 }
-    
+.active{
+    color: $light!important;
+}  

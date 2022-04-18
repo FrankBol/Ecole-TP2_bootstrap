@@ -1,19 +1,19 @@
 .fade-in1 {
     animation: fadeIn 4s linear 0.5s both;
   }
-  .fade-in2 {
-    opacity: 0;
-    animation: fadeIn 4s linear 1.5s both;
-  }
-  .fade-in3 {
-    opacity: 0;
-    animation: fadeIn 4s linear 2.5s both;
-  }
-  .fade-in4 {
-    opacity: 0;
-    animation: fadeIn 4s linear 3.5s both;
-  }
-  
+.fade-in2 {
+  opacity: 0;
+  animation: fadeIn 4s linear 1.5s both;
+}
+.fade-in3 {
+  opacity: 0;
+  animation: fadeIn 4s linear 2.5s both;
+}
+.fade-in4 {
+  opacity: 0;
+  animation: fadeIn 4s linear 3.5s both;
+}
+
   @keyframes fadeIn {
       0% { 
           opacity: 0;

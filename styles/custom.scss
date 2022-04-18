@@ -34,7 +34,11 @@ $spacers: (
     7: ($spacer * 15),
 );
 
-
-// --------------------------------------------------Page Création---------------------------------------------------
 $form-range-track-bg: $success;
 
+$degrader: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
+
+.hover-light{
+    color: $light !important;
+    font-size: 1.1rem;
+}
