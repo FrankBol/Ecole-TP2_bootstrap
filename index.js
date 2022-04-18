@@ -18,6 +18,9 @@ app.get ("/default", (req, res)=>{
 app.get ("/personnageCree", (req, res)=>{
     res.render("personnageCree", {title : "Personnage Créé"});
 });
+app.get ("/test", (req, res)=>{
+    res.render("test", {title : "Personnage Créé"});
+});
 
 const port = 4000
 app.listen(port, () => console.log("APP Démmaré sur le port  " + port));
