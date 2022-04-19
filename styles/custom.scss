@@ -43,6 +43,16 @@ $degrader: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9))
     color: $light !important;
     font-size: 1.1rem;
 }
-.margin-bottom-0{
-    margin-bottom: 0!important;
+
+.sizing-cards {
+    @extend .col-sm;
+    @extend .pb-5;
+    @extend .pt-5;
+}
+
+.total-cards {
+    @extend .card;
+    @extend .bg-info;
+    @extend .text-light;
+    @extend .mx-auto;
 }
