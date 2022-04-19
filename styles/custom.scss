@@ -5,6 +5,7 @@ body, html{
     padding: 0 !important;
 }
 
+
 // Primary
 $dark-red: #4a2932;
 $medium-red: #a34c50;
@@ -41,4 +42,7 @@ $degrader: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9))
 .hover-light{
     color: $light !important;
     font-size: 1.1rem;
+}
+.margin-bottom-0{
+    margin-bottom: 0!important;
 }
