@@ -1,14 +1,17 @@
 @import "custom"; 
 
 footer {
-    background: $degrader;
-    a{
-        &:hover {
-            @extend .hover-light;
+    section{
+        background: $degrader;
+
+        a{
+            &:hover {
+                @extend .hover-light;
+            }
         }
-    }
-    p{
-        color:rgb(207, 231, 252)
+        p{
+            color:rgb(207, 231, 252)
+        }
     }
 }
 

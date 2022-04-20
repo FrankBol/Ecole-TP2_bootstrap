@@ -57,7 +57,7 @@ a {
   margin: 0px 0px 0px 10px !important;
 }
 
-.hover-light, footer a:hover, .nav-secondaire a:hover, .nav-principal li a:hover {
+.hover-light, footer section a:hover, .nav-secondaire a:hover, .nav-principal li a:hover {
   color: #cec2ae !important;
   font-size: 1.1rem;
 }
@@ -96,7 +96,7 @@ a {
   margin: 0px 0px 0px 10px !important;
 }
 
-.hover-light, footer a:hover, .nav-principal li a:hover, .nav-secondaire a:hover {
+.hover-light, footer section a:hover, .nav-principal li a:hover, .nav-secondaire a:hover {
   color: #cec2ae !important;
   font-size: 1.1rem;
 }
@@ -113,15 +113,15 @@ a {
   margin: 0px 0px 0px 10px !important;
 }
 
-.hover-light, footer a:hover, .nav-principal li a:hover, .nav-secondaire a:hover {
+.hover-light, footer section a:hover, .nav-principal li a:hover, .nav-secondaire a:hover {
   color: #cec2ae !important;
   font-size: 1.1rem;
 }
 
-footer {
+footer section {
   background: linear-gradient(to right, rgba(74, 41, 50, 0.9), rgba(163, 76, 80, 0.9));
 }
-footer p {
+footer section p {
   color: rgb(207, 231, 252);
 }
 
