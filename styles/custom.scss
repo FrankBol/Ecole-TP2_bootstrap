@@ -1,8 +1,6 @@
 // ----------------------------------------------All Page---------------------------------------
 body, html{
     font-family:'Ribeye', cursive !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 
@@ -39,13 +37,20 @@ $form-range-track-bg: $success;
 
 $degrader: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
 
+a{
+    text-decoration: none!important;
+}
+.fil-ariane{
+    margin: 0px 0px 0px 10px!important;
+}
+
 .hover-light{
     color: $light !important;
     font-size: 1.1rem;
 }
 
 .sizing-cards {
-    @extend .col-sm;
+    @extend .col-md;
     @extend .pb-5;
     @extend .pt-5;
 }
@@ -55,4 +60,5 @@ $degrader: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9))
     @extend .bg-info;
     @extend .text-light;
     @extend .mx-auto;
+    @extend .container;
 }

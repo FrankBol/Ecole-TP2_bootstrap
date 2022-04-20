@@ -1,9 +1,17 @@
 @import "custom"; 
 
 
-.nav-prin { 
+.nav-principal { 
+    @extend.bg-info;
+    @extend.col-md-3;
+    @extend.col-lg-2;
     li {
+        a.active{
+            color: $light!important;
+        }
         a {
+            @extend.nav-link;
+            @extend.text-white;
             &:hover {
                 @extend .hover-light;
             }
@@ -14,6 +22,9 @@
 }
 
 .nav-secondaire {
+    @extend.navbar;
+    @extend.navbar-expand-md;
+    @extend.navbar-light;
     background: $degrader;
 
     a{
@@ -39,6 +50,4 @@
         }
 }
 }
-.active{
-    color: $light!important;
-}  
+

@@ -1,23 +1,25 @@
 <%- include ("partials/header")%>
-<main class="container-fluid"></main>
-<ol class="breadcrumb margin-bottom-0">
-    <li class="breadcrumb-item"><a class="text-decoration-none"  href="/">Acceuil</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Défaut</li>
-  </ol>
+<main>
+    <nav aria-label="Fil d'Ariane">
+        <ol class="breadcrumb fil-ariane">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Acceuil</a></li>
+          <li class="breadcrumb-item active fw-bolder" aria-current="page">Défaut</li>
+        </ol>
+    </nav>
     <div class="row">
-        <nav class="bg-info nav-principal col-md-2 nav-prin" aria-label="menu-principal">
+        <nav class="nav-principal" aria-label="menu-principal">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="lien-nav-principal" href="/">Accueil</a>
+                    <a id="lien-nav-principal" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="creation">Création</a>
+                    <a href="creation">Création</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="creation" href="default">Défaut</a>
+                    <a class="active" aria-current="page" href="default">Défaut</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="personnageCree">Personnage Créé</a>
+                    <a href="personnageCree">Personnage Créé</a>
                 </li>
             </ul>
         </nav>

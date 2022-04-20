@@ -1,11 +1,14 @@
 @import "custom"; 
 
-footer.text-lg-start {
+footer {
     background: $degrader;
     a{
         &:hover {
             @extend .hover-light;
         }
+    }
+    p{
+        color:rgb(207, 231, 252)
     }
 }
 

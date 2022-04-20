@@ -1,77 +1,83 @@
 <%- include ("partials/header")%>
-<main class="container-fluid "></main>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb margin-bottom-0">
+<main>
+    <nav aria-label="Fil d'Ariane">
+        <ol class="breadcrumb fil-ariane">
           <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Acceuil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Personnage Créé</li>
+          <li class="breadcrumb-item active fw-bolder" aria-current="page">Personnage Créé</li>
         </ol>
     </nav>
     <div class="row">
-        <nav class="bg-info nav-principal col-sm-2 nav-prin" aria-label="menu-principal">
+        <nav class="nav-principal" aria-label="menu-principal">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="lien-nav-principal" href="/">Accueil</a>
+                    <a id="lien-nav-principal" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="creation">Création</a>
+                    <a href="creation">Création</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="default">Défaut</a>
+                    <a href="default">Défaut</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="personnage Créé" href="personnageCree">Personnage Créé</a>
+                    <a class="active" aria-current="page" href="personnageCree">Personnage Créé</a>
                 </li>
             </ul>
         </nav>
-        <div class="col-sm row image-fond-cree">
-            <div class="col-md row">
-                <div class="sizing-cards fade-in1">
-                    <div class="total-cards">
-                        <img src="/img/1.png" class="card-img-top" alt="Premiere Cart">
-                        <div class="card-body">
-                            <span class="card-title fw-bold h5">Aranbin</span>
-                            <p class="card-text">Ces créatures font de leur mieux pour aider les autres en fonction de leurs besoins. De nombreux célestes, quelques géants des nuages et la plupart des gnomes sont d'alignement Neutre Bon.</p>
+        <div class="col-md image-fond-cree">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="row">
+                        <div class="sizing-cards fade-in1">
+                            <div class="total-cards">
+                                <img src="/img/1.png" class="card-img-top" alt="Premiere Cart">
+                                <div class="card-body">
+                                    <span class="card-title fw-bold h5">Aranbin</span>
+                                    <p class="card-text">Ces créatures font de leur mieux pour aider les autres en fonction de leurs besoins. De nombreux célestes, quelques géants des nuages et la plupart des gnomes sont d'alignement Neutre Bon.</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="sizing-cards fade-in2">
-                    <div class="total-cards">
-                        <img src="/img/2.png" class="card-img-top" alt="Deuxième Cart">
-                        <div class="card-body">
-                            <span class="card-title fw-bold h5">Lerrer</span>
-                            <p class="card-text">Ces créatures agissent en suivant leur conscience, sans tenir compte des attentes des autres, tout en conservant un grand respect pour la vie. On trouve parmi les créatures qui ont....</p>
-                        </div>
-                        <div class="card-body">
-                            <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md row">
-                <div class="sizing-cards fade-in3">
-                    <div class="total-cards">
-                        <img src="/img/3.png" class="card-img-top" alt="troisième cart">
-                        <div class="card-body">
-                            <span class="card-title fw-bold h5">Mashishi</span>
-                            <p class="card-text">Ces individus sont respectueux de la loi, d'une tradition ou de leur code de conduite personnel. C'est le cas de nombreux moines et magiciens. Mais ne l'ai attaquer surtout pas par surprise.</p>
-                        </div>
-                        <div class="card-body">
-                            <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                        <div class="sizing-cards fade-in2">
+                            <div class="total-cards">
+                                <img src="/img/2.png" class="card-img-top" alt="Deuxième Cart">
+                                <div class="card-body">
+                                    <span class="card-title fw-bold h5">Lerrer</span>
+                                    <p class="card-text">Ces créatures agissent en suivant leur conscience, sans tenir compte des attentes des autres, tout en conservant un grand respect pour la vie. On trouve parmi les créatures qui ont....</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="sizing-cards fade-in4">
-                    <div class="total-cards">
-                        <img src="/img/2.png" class="card-img-top" alt="quatrième cart">
-                        <div class="card-body">
-                            <span class="card-title fw-bold h5">Braunruvim</span>
-                            <p class="card-text">Ces créatures écoutent leurs désirs et font passer leur propre liberté avant tout. On trouve parmi les créatures d'alignement Chaotique Neutre de nombreux barbares et roublards et quelques...</p>
+                <div class="col-md">
+                    <div class="row">
+                        <div class="sizing-cards fade-in3">
+                            <div class="total-cards">
+                                <img src="/img/3.png" class="card-img-top" alt="troisième cart">
+                                <div class="card-body">
+                                    <span class="card-title fw-bold h5">Mashishi</span>
+                                    <p class="card-text">Ces individus sont respectueux de la loi, d'une tradition ou de leur code de conduite personnel. C'est le cas de nombreux moines et magiciens. Mais ne l'ai attaquer surtout pas par surprise sinon...</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                        <div class="sizing-cards fade-in4">
+                            <div class="total-cards">
+                                <img src="/img/2.png" class="card-img-top" alt="quatrième cart">
+                                <div class="card-body">
+                                    <span class="card-title fw-bold h5">Braunruvim</span>
+                                    <p class="card-text">Ces créatures écoutent leurs désirs et font passer leur propre liberté avant tout. On trouve parmi les créatures d'alignement Chaotique Neutre de nombreux barbares et roublards et quelques...</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-link stretched-link text-white">En savoir plus...</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

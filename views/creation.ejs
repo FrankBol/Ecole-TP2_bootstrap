@@ -1,142 +1,136 @@
 <%- include ("partials/header")%>
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb margin-bottom-0">
-    <li class="breadcrumb-item"><a class="text-decoration-none" id="lien-nav-principal" href="/">Acceuil</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Création</li>
+<main>
+<nav aria-label="Fil d'Ariane">
+  <ol class="breadcrumb fil-ariane">
+    <li class="breadcrumb-item"><a class="text-decoration-none text-dark" id="lien-nav-principal" href="/">Acceuil</a></li>
+    <li class="breadcrumb-item active fw-bolder" aria-current="page">Création</li>
   </ol>
 </nav>
-<main class="container-fluid">
-  <div class="row ">
-    <nav class="bg-info col-sm-2 bg-info nav-prin" aria-label="barre navigation principal">
+  <div class="row">
+    <nav class="nav-principal" aria-label="barre navigation principal">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link text-white" href="/">Accueil</a>
+          <a id="lien-nav-principal" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active " aria-current="creation" href="creation">Création</a>
+          <a class="active " aria-current="page" href="creation">Création</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="default">Défaut</a>
+          <a href="default">Défaut</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="personnageCree">Personnage Créé</a>
+          <a href="personnageCree">Personnage Créé</a>
       </li>
       </ul>
     </nav>
-    <form action="https://philippefleury.com/backend.php" method="post" class="col-sm ">
+    <form action="https://philippefleury.com/backend.php" method="post" class="col-md">     
       <div class="row">
-        <section class="col-md-6 bg-light p-3">
-          <fieldset class="form-group p-3 ">
-            <div class="row">
-              <figure class="figure col-5">
-                <img src="/img/3.png" alt="Personage Nain" class="figure-img img-fluid rounded">
-                <figcaption class="figure-caption">Les Personnages</figcaption>
-              </figure>
-              <div class="col">
-                <div class="p-5">
-                  <h4 class="text-success mb-3">Choisir une race </h4>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgElfe" value="imgElfe">
-                    <label class="form-check-label  mb-2" for="imgElfe">Elfe
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHalfelin" value="imgHalfelin">
-                    <label class="form-check-label mb-2" for="imgHalfelin">Halfelin
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHumain" value="imgHumain">
-                    <label class="form-check-label mb-2" for="imgHumain">Humain
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgNain" value="imgNain">
-                    <label class="form-check-label mb-2" for="imgNain">Nain
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgSangdragon" value="imgSangdragon">
-                    <label class="form-check-label mb-2" for="imgSangdragon">Sangdragon 
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgGnome" value="imgGnome">
-                    <label class="form-check-label mb-2" for="imgGnome">Gnome
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiElfe" value="imgDemiElfe">
-                    <label class="form-check-label mb-2" for="imgDemiElfe">Demi-Elfe
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiOrc" value="imgDemiOrc">
-                    <label class="form-check-label mb-2" for="imgDemiOrc">Demi-Orc
-                  </div>
-                  <div class="form-check ">
-                    <input class="form-check-input" type="radio" name="choixPersonnage" id="imgTieffelin" value="imgTieffelin">
-                    <label class="form-check-label mb-2" for="imgTieffelin">Tieffelin
-                  </div>
-                </div>
+        <fieldset class="p-3 col-lg bg-light">
+          <div class="row d-flex align-items-center">
+            <figure class="figure col me-3">
+              <img src="/img/3.png" alt="Personage Nain" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Les Personnages</figcaption>
+            </figure>
+            <div class="col">   
+              <p class="text-success mb-3 h4">Choisir une race </p>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgElfe" value="imgElfe">
+                <label class="form-check-label  mb-2" for="imgElfe">Elfe
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHalfelin" value="imgHalfelin">
+                <label class="form-check-label mb-2" for="imgHalfelin">Halfelin
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgHumain" value="imgHumain">
+                <label class="form-check-label mb-2" for="imgHumain">Humain
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgNain" value="imgNain">
+                <label class="form-check-label mb-2" for="imgNain">Nain
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgSangdragon" value="imgSangdragon">
+                <label class="form-check-label mb-2" for="imgSangdragon">Sangdragon 
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgGnome" value="imgGnome">
+                <label class="form-check-label mb-2" for="imgGnome">Gnome
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiElfe" value="imgDemiElfe">
+                <label class="form-check-label mb-2" for="imgDemiElfe">Demi-Elfe
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgDemiOrc" value="imgDemiOrc">
+                <label class="form-check-label mb-2" for="imgDemiOrc">Demi-Orc
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="choixPersonnage" id="imgTieffelin" value="imgTieffelin">
+                <label class="form-check-label mb-2" for="imgTieffelin">Tieffelin     
               </div>
             </div>
-            <div class="form-floating col">
-              <textarea class="form-control w-75 mt-6" placeholder="Slogan" name="slogan" id="slogan"></textarea>
-              <label for="floatingTextarea">Slogan</label>
-              <small id="passwordHelpBlock" class="form-text text-muted">
-                Phrase de victoire de votre personnage
-              </small>
+          </div>
+          <div class="form-floating col">
+            <textarea class="form-control w-75 mt-6" placeholder="Slogan" name="slogan" id="slogan"></textarea>
+            <label for="floatingTextarea">Slogan</label>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Phrase de victoire de votre personnage
+            </small>
+          </div>
+        </fieldset>    
+        <fieldset class="p-3 col-lg bg-light">
+          <div class="p-3 col-8">
+            <div class="mb-3">
+              <label for="couleur" class="form-label  text-success">Couleur du badge</label>
+              <input type="color" class="form-control form-control-color" name="couleur" id="couleur" value="couleur" title="Choose your color">
             </div>
-          </fieldset>
-        </section>
-        <section class="col-md-6 p-3 bg-light">
-          <fieldset class=" p-3">
-            <div class="p-3 col-8">
-              <div class="mb-3">
-                <label for="couleur" class="form-label  text-success">Couleur du badge</label>
-                <input type="color" class="form-control form-control-color" name="couleur" id="couleur" value="couleur" title="Choose your color">
-              </div>
-              <label for="lieuxNaissance" class="form-label  text-success">Lieux de Naissance</label>
-              <input class="form-control" list="datalistOptions" nom="lieuxNaissance" id="lieuxNaissance">
-              <datalist id="datalistOptions" name="datalistOptions">
-                <option value="La compté">
-                <option value="Pays du bouck">
-                <option value="Vallé Ensorcellé">
-                <option value="Montagne d'or">
-                <option value="Marécage Malifique">
-              </datalist>
+            <label for="lieuxNaissance" class="form-label  text-success">Lieux de Naissance</label>
+            <input class="form-control" list="datalistOptions" nom="lieuxNaissance" id="lieuxNaissance">
+            <datalist id="datalistOptions" name="datalistOptions">
+              <option value="La compté">
+              <option value="Pays du bouck">
+              <option value="Vallé Ensorcellé">
+              <option value="Montagne d'or">
+              <option value="Marécage Malifique">
+            </datalist>
+          </div>
+          <div class="p-3 col-8">
+            <h4 class=" text-success">Choisir les niveaux</h4>
+            <div>
+              <label for="vitesseRange" class="form-label w-25">Vitesse</label>
+              <span id="vitesseValue">50</span>
+              <input type="range" class="form-range" name="vitesseRange" id="vitesseRange">
             </div>
-            <div class="p-3 col-8">
-              <h4 class=" text-success">Choisir les niveaux</h4>
-              <div>
-                <label for="vitesseRange" class="form-label w-25">Vitesse</label>
-                <span id="vitesseValue">50</span>
-                <input type="range" class="form-range" name="vitesseRange" id="vitesseRange">
-              </div>
-              <div>
-                <label for="magieRange" class="form-label w-25">Magie</label>
-                <span id="magieValue"></span>
-                <input type="range" class="form-range" name="magieRange" id="magieRange">
-              </div>
-              <div>
-                <label for="forceRange" class="form-label w-25">Force</label>
-                <span id="forceValue">50</span>
-                <input type="range" class="form-range" name="forceRange" id="forceRange">
-              </div>
-              <div>
-                <label for="PouvoirRange" class="form-label w-25">Pouvoir</label>
-                <span id="pouvoirValue">50</span>
-                <input type="range" class="form-range" name="PouvoirRange" id="pouvoirRange">
-              </div>
+            <div>
+              <label for="magieRange" class="form-label w-25">Magie</label>
+              <span id="magieValue"></span>
+              <input type="range" class="form-range" name="magieRange" id="magieRange">
             </div>
-            <div class="p-3 w-75">
-              <label for="file" class="form-label  text-success">Importer vos Cartes</label>
-              <input class="form-control" type="file" name="file" id="file">
+            <div>
+              <label for="forceRange" class="form-label w-25">Force</label>
+              <span id="forceValue">50</span>
+              <input type="range" class="form-range" name="forceRange" id="forceRange">
             </div>
-            <div class="btn-group" role="group" aria-label="Boutton soummetre formilaire">
-              <button type="submit" class="btn btn-primary">SOUMETTRE</button>
-              <button type="button" class="btn btn-secondary">RÉNITIALISATION</button>
-              <button type="button" class="btn btn-primary bg-white text-dark"><svg xmlns="http://www.w3.org/2000/svg"
-                  width="16" height="16" fill="currentColor" class="bi bi-dice-6-fill" viewBox="0 0 16 16">
-                  <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm1 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM12 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM4 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                </svg>PERSONNAGE ALÉATOIRE</button>
+            <div>
+              <label for="pouvoirRange" class="form-label w-25">Pouvoir</label>
+              <span id="pouvoirValue">50</span>
+              <input type="range" class="form-range" name="PouvoirRange" id="pouvoirRange">
             </div>
-          </fieldset>
-        </section>
+          </div>
+          <div class="p-3 w-75">
+            <label for="file" class="form-label  text-success">Importer vos Cartes</label>
+            <input class="form-control" type="file" name="file" id="file">
+          </div>
+          <div class="btn-group p-3" role="group" aria-label="Boutton soummetre formilaire">
+            <button type="submit" class="btn btn-primary">SOUMETTRE</button>
+            <button type="button" class="btn btn-secondary">RÉNITIALISATION</button>
+            <button type="button" class="btn btn-primary bg-white text-dark" aria-label="bouton personnage aléatoire"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-dice-6-fill" viewBox="0 0 16 16">
+                <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm1 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM12 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM4 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg></button>
+          </div>
+        </fieldset>  
       </div>
     </form>
   </div>
